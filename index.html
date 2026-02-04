@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stopwatch-container">
+        <h1>Stopwatch</h1>
+        <div class="display">
+            <span id="minutes">00</span>:<span id="seconds">00</span>.<span id="milliseconds">00</span>
+        </div>
+        <div class="controls">
+            <button id="startBtn" class="control-btn start-btn">Start</button>
+            <button id="stopBtn" class="control-btn stop-btn" disabled>Stop</button>
+            <button id="lapBtn" class="control-btn lap-btn" disabled>Lap</button>
+            <button id="resetBtn" class="control-btn reset-btn" disabled>Reset</button>
+        </div>
+        <div class="laps-container">
+            <h2>Lap Times</h2>
+            <ul id="lapList">
+                <!-- Lap times will be dynamically inserted here -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
